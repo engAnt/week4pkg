@@ -26,10 +26,10 @@ Make sure that you have downloaded FARS data before running the functions below.
 The data files should be at the root of your working directory.
 
 ```{r}
-library(dplyr)
-library(readr)
-library(maps)
-library(week4pkg)
+# library(dplyr)
+# library(readr)
+# library(maps)
+# library(week4pkg)
 ```
 
 ## make_filename(<year>)
