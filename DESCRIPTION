@@ -1,17 +1,23 @@
 Package: week4pkg
 Type: Package
-Title: Building R Packages - week no. 4 homework
-Version: 0.1.0
-Author: Tony Sellu
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Title: FARS data analysis functions
+Version: 0.0.1
+Authors@R: person("Tony", "Sellu", email = "me@email.com", role = c("aut", "cre"))
+Description: This package allows you to easily analyze data from the US National Highway
+  Traffic Safety Administration's Fatality Analysis Reporting System, which is a
+  nationwide census providing the American public yearly data regarding fatal
+  injuries suffered in motor vehicle traffic crashes.
+License: License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Suggests: 
+RoxygenNote: 6.1.0
+Imports: dplyr,
+    maps,
+    readr,
+    tidyr,
+    magrittr
+Suggests:
     testthat,
     knitr,
     rmarkdown
-RoxygenNote: 6.1.0
 VignetteBuilder: knitr

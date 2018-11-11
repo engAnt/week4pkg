@@ -6,11 +6,11 @@
 #' Error if file not found.
 #'
 #' @examples
+#' \dontrun{
 #' fars_read("accident_2013.csv.bz2")
-#'
+#' }
 #' @importFrom dplyr tbl_df
 #' @importFrom readr read_csv
-#'
 #' @export
 fars_read <- function(filename) {
         if(!file.exists(filename))
@@ -47,10 +47,10 @@ make_filename <- function(year) {
 #' List item is NULL if csv file not found for a particular year.
 #'
 #' @examples
+#' \dontrun{
 #' fars_read_years(2013:2017)
-#'
+#' }
 #' @importFrom dplyr mutate select
-#'
 #' @export
 fars_read_years <- function(years) {
         lapply(years, function(year) {
@@ -73,8 +73,9 @@ fars_read_years <- function(years) {
 #' @return tibble count of observations for all the months across years.
 #'
 #' @examples
+#' \dontrun{
 #' fars_summarize_years(2013:2014)
-#'
+#' }
 #' @importFrom dplyr group_by summarize bind_rows
 #' @importFrom tidyr spread
 #'
@@ -100,8 +101,9 @@ fars_summarize_years <- function(years) {
 #' @return NULL
 #'
 #' @examples
+#' \dontrun{
 #' fars_map_state(39, 2014)
-#'
+#' }
 #' @importFrom dplyr filter
 #' @importFrom maps map
 #' @importFrom graphics points

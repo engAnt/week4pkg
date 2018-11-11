@@ -17,6 +17,7 @@ Error if file not found.
 Read FARS data from (compressed) csv file
 }
 \examples{
+\dontrun{
 fars_read("accident_2013.csv.bz2")
-
+}
 }

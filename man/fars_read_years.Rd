@@ -20,6 +20,7 @@ Retrieve all months (by year, year must be present in
  \code{years} argument) for which an observation exists
 }
 \examples{
+\dontrun{
 fars_read_years(2013:2017)
-
+}
 }

@@ -16,6 +16,7 @@ tibble count of observations for all the months across years.
 Summarize observations by month across years
 }
 \examples{
+\dontrun{
 fars_summarize_years(2013:2014)
-
+}
 }

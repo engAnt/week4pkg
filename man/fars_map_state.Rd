@@ -18,6 +18,7 @@ No plot is made if data does not exist for the specified state and year.
 Error if the state has no data for the specified year.
 }
 \examples{
+\dontrun{
 fars_map_state(39, 2014)
-
+}
 }
