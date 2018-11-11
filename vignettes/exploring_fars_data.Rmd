@@ -9,14 +9,6 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-```{r setup, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>"
-)
-```
-
-
 ## Overview
 
 This package allows you to easily analyze data from the US National Highway
@@ -32,6 +24,13 @@ injuries suffered in motor vehicle traffic crashes.
 
 Make sure that you have downloaded FARS data before running the functions below.
 The data files should be at the root of your working directory.
+
+```{r}
+library(dplyr)
+library(readr)
+library(maps)
+library(week4pkg)
+```
 
 ## make_filename(<year>)
 
@@ -69,5 +68,5 @@ fars_summarize_years(2013:2015)
 
 Map locations of accidents
 ```{r eval=FALSE}
-fars_map_state('03', 2015)
+fars_map_state('05', 2015)
 ```
